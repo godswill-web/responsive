@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> responsive layout </title>
+		<style>
+			/********** base styles **********/
+			* {
+				box-sizing: border-box;
+			}
+			h1 {
+				margin-bottom: 15px;
+				margin-left: 45%;
+			}
+			.first {
+				float: left;
+				border: 4px solid black;
+				background-color: #f1f1f1;
+				width: 32%;
+				margin: .6%;
+			}
+			.ptag2 {
+				float: right;
+				padding: 5px;
+				background-color: pink;
+				color: black;
+				border-left: 4px solid black;
+				border-bottom: 4px solid black;
+				margin-left: 75%;
+				width: 40%;
+				margin-top: 0;
+				text-align: center;
+			}
+			#ptag1 {
+				padding: 8px;
+				color: blue;
+			}
+
+			#div1 {
+				background-color: pink;
+			}
+
+			#div2 {
+				background-color: red;
+				color: white;
+			}
+			#div3 {
+				background-color: lightyellow;
+			}
+
+			@media (max-width: 768px) {
+				.first {
+					/*float: left;*/
+					width: 100%;
+					border: 4px solid black;
+					margin-bottom: .6%;
+					background-color: #f1f1f1;
+				}
+			}
+
+			@media (min-width: 768px) and (max-width: 991px) {
+				.first {
+					float: left;
+					width: 49%;
+					background-color: #f1f1f1;
+					margin: .5%;
+					border: 4px solid black;
+					}
+					#last {
+						width: 100%;
+						/*margin: 0 auto;*/
+					}
+				}
+
+			@media (min-width: 992px) {
+				.first {
+					float: left;
+					width: 32%;
+					border: 4px solid black;
+					margin: .6%;
+					background-color: #f1f1f1;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1> our menu </h1>
+
+		<div class="row">
+			<div class="first"><p class="ptag2" id="div1">Chicken</p><p id="ptag1">Chicken is a kind of food loved by so many people and gives protein to the body it also helps build up the body</p>
+		</div>
+			<div class="first"><p class="ptag2" id="div2">Beef</p><p id="ptag1">Beef is a kind of meat which also gives protein to the body and it keeps the  body fit </p>
+		</div>
+			<div class="first" id="last"><p class="ptag2" id="div3">sushi</p><p id="ptag1">Sushi is the jd bdgfftutb gjryutghg gfthiy7yudft fyuuhiuyhuyjhy hgjk,ky hfgujgh</p>
+		</div>
+		</div>
+	</body>
+	</html>
+
